@@ -19,11 +19,49 @@
 
 // sections
 
+.section-title {
+  color: $fontColorDark;
+  font-family: $fontFamilyTitles;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.article-title {
+  font-family: $fontFamilyTitles;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.small-title {
+  color: $fontColorLightMidtone;
+  font-size: 14px;
+  font-weight: normal;
+}
+.section01,
+.section02 {
+  font-family: $fontFamilyText;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section01 {
+  color: $fontColorDarkMidtone;
+}
+
 .section01__button,
 .section02__button {
   font-family: $fontFamilyText;
   font-weight: 500;
   font-size: 20px;
+}
+
+.section01__button {
+  color: $colorPrimaryButton;
+}
+
+.section02__button {
+  color: $colorSecondaryButton;
 }
 
 // footer
