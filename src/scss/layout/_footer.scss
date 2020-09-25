@@ -5,7 +5,7 @@
   align-items: center;
   padding: 0px 0 45px 0;
 
-  & img {
+  & .icon-arrow {
     width: 45px;
     height: 45px;
     padding: 11px 12px 10px 12.4px;
@@ -14,10 +14,10 @@
     box-shadow: 0 2px 4px 0 black;
     transform: translate(0px, -22.5px);
     transition: box-shadow ease-out 0.7s;
+  }
 
-    &:active {
-      box-shadow: none;
-    }
+  &:active {
+    box-shadow: none;
   }
 
   &__elements {
@@ -43,6 +43,7 @@
   & .list-socialmedia {
     list-style: none;
     margin: 15px 0 15px 0;
+
     @media all and (min-width: 768px) {
       margin: 0px;
     }
@@ -55,6 +56,11 @@
       order: -2;
     }
   }
+}
+
+.link-sections:hover,
+.link-socialmedia:hover {
+  font-weight: bold;
 }
 
 .heart-icon {
