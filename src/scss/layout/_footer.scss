@@ -13,6 +13,11 @@
     border-radius: 22.5px;
     box-shadow: 0 2px 4px 0 black;
     transform: translate(0px, -22.5px);
+    transition: box-shadow ease-out 0.7s;
+
+    &:active {
+      box-shadow: none;
+    }
   }
 
   &__elements {

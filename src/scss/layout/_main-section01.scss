@@ -1,6 +1,8 @@
 .section01 {
   background-color: $colorFirstSection;
   width: 100%;
+  max-width: 320px;
+  margin: auto;
   padding: 30px 15px 45px 15px;
 
   & .section-title {
@@ -15,5 +17,18 @@
     border: $colorPrimaryButton solid 2px;
     border-radius: 22.5px;
     margin-top: 30px;
+    transition: box-shadow ease-in 0.7s, box-shadow ease-out 0.7s,
+      font-size ease 0.7s;
+
+    &:hover {
+      box-shadow: 2px 4px 4px 0 black;
+    }
+
+    &:active {
+      color: $colorSecondaryButton;
+      font-size: 18px;
+      background-color: $colorPrimaryButton;
+      box-shadow: none;
+    }
   }
 }
