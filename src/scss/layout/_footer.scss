@@ -21,27 +21,33 @@
     flex-direction: column;
 
     @media all and (min-width: 768px) {
+      max-width: 768px;
       flex-direction: row;
       justify-content: space-between;
-      padding: 0px 39px;
       text-align: left;
+      padding: 0 39px;
     }
 
-    & .list-sections,
-    & .list-socialmedia {
-      list-style: none;
-      margin: 15px 0 15px 0;
-      @media all and (min-width: 768px) {
-        margin: 0px;
-      }
+    @media all and (min-width: 1280px) {
+      max-width: 1280px;
+      padding: 0 370px;
     }
+  }
 
-    & .copy {
-      margin-top: 15px;
+  & .list-sections,
+  & .list-socialmedia {
+    list-style: none;
+    margin: 15px 0 15px 0;
+    @media all and (min-width: 768px) {
+      margin: 0px;
+    }
+  }
 
-      @media all and (min-width: 768px) {
-        order: -2;
-      }
+  & .copy {
+    margin-top: 15px;
+
+    @media all and (min-width: 768px) {
+      order: -2;
     }
   }
 }
