@@ -22,15 +22,26 @@
 .section-title {
   color: $fontColorDark;
   font-family: $fontFamilyTitles;
-  font-weight: bold;
-  line-height: 30px;
+  font-size: 24px;
   text-transform: capitalize;
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 
 .article-title {
   font-family: $fontFamilyTitles;
   font-size: 18px;
-  line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .small-title {
@@ -38,16 +49,20 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: capitalize;
+
+  @media all and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .section01,
 .section02 {
   font-family: $fontFamilyText;
   font-size: 18px;
   line-height: 30px;
-}
 
-.section01 {
-  color: $fontColorDarkMidtone;
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .section01__button,
@@ -59,10 +74,6 @@
 
 .section01__button {
   color: $colorPrimaryButton;
-}
-
-.section02__button {
-  color: $colorSecondaryButton;
 }
 
 // footer
