@@ -8,12 +8,26 @@
     font-size: bold;
     font-size: 42px;
     text-transform: uppercase;
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+    }
   }
 
   & .slogan {
     font-family: $fontFamilyText;
     font-size: 16px;
     line-height: 21px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 }
 
