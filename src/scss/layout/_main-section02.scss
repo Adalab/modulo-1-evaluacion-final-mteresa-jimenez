@@ -10,6 +10,10 @@
     align-items: center;
   }
 
+  @media all and (min-width: 1280px) {
+    padding: 60px 0px;
+  }
+
   &__button {
     width: 184px;
     height: 45px;
@@ -20,6 +24,14 @@
     margin-top: 45px;
     transition: box-shadow ease-in 0.7s, box-shadow ease-out 0.7s,
       color ease-in 0.5s, background-color ease-out 0.7s;
+
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
+
+    @media all and (min-width: 1280px) {
+      width: 255px;
+    }
 
     &:hover {
       box-shadow: 2px 4px 6px 0 black;
@@ -43,9 +55,13 @@
     grid-gap: 27.5px;
   }
 
+  @media all and (min-width: 1280px) {
+    grid-gap: 26.2px;
+  }
+
   & .article {
-    margin: auto;
     width: 184px;
+    margin: auto;
     padding-top: 45px;
 
     @media all and (min-width: 768px) {
@@ -54,6 +70,10 @@
       & .article-title {
         margin-bottom: 14px;
       }
+    }
+
+    @media all and (min-width: 1280px) {
+      width: 350px;
     }
   }
 }
