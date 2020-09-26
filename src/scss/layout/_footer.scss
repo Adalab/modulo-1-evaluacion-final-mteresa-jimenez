@@ -33,10 +33,6 @@
     }
   }
 
-  &:active {
-    box-shadow: none;
-  }
-
   &__elements {
     width: 100%;
     display: flex;
@@ -64,22 +60,26 @@
     @media all and (min-width: 768px) {
       margin: 0px;
     }
+
+    & .link-sections,
+    .link-socialmedia {
+      padding: 15px;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
   }
 
   & .copy {
     margin-top: 15px;
 
+    & .heart-icon {
+      color: $fontColorMidtone;
+    }
+
     @media all and (min-width: 768px) {
       order: -2;
     }
   }
-}
-
-.link-sections:hover,
-.link-socialmedia:hover {
-  font-weight: bold;
-}
-
-.heart-icon {
-  color: $fontColorMidtone;
 }
