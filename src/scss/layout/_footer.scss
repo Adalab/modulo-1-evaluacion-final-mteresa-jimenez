@@ -14,6 +14,23 @@
     box-shadow: 0 2px 4px 0 black;
     transform: translate(0px, -22.5px);
     transition: box-shadow ease-out 0.7s;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    @keyframes arrow {
+      from {
+        transform: translate(0px, -32.5px);
+      }
+
+      50% {
+        transform: translate(0px, -10px);
+      }
+
+      to {
+        transform: translate(0px, -32.5px);
+      }
+    }
   }
 
   &:active {
