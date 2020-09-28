@@ -1,0 +1,18 @@
+.section-special-offer {
+  display: none;
+  @media all and (min-width: 768px) {
+    display: block;
+    background-color: $colorPrimaryButton;
+    width: 100vw;
+    text-align: center;
+
+    & .section-title {
+      margin: 0 0 10px 0;
+    }
+
+    & .section-description {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
