@@ -1,5 +1,5 @@
 .menu-toggle {
-  background-color: $colorHeader;
+  background-color: $colorFooter;
   width: 55px;
   height: 50px;
   color: $fontColorLight;
@@ -9,6 +9,11 @@
   z-index: 1;
   padding-top: 14px;
   padding-left: 10px;
+
+  &:hover {
+    background-color: $colorHeader;
+  }
+
   & a {
     text-decoration: none;
     color: $fontColorLight;
