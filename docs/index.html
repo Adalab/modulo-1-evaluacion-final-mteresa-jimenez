@@ -6,15 +6,25 @@
     <title>Módulo 1 Evaluación final</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/dinosaurio-favicon.png" type="image/x-icon"/>
   </head>
 
   <body>
     <header class="header" id="header">
-      <nav class="header__menu">
-        <a href="https://adalab.es/" title="Ir a la web de Adalab" target="_blank"
-          ><img src="./assets/images/ico-menu.png" alt="Enlace a la web de Adalab"
-        /></a>
+      <nav class="header__menu" role="navigation">
+        <div class="menu-toggle">
+          <input class="menu-toggle__input" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="menu">
+            <a href="#header"><li>Home</li></a>
+            <a href="#section01"><li>Insomnia Tips</li></a>
+            <a href="#section02"><li>Reasons to purchase</li></a>
+          </ul>
+        </div>
       </nav>
+
       <div class="header__hero">
         <h1 class="h1" tabindex="1">Anonymous proxy</h1>
         <p class="slogan" tabindex="1">In hac habitasse platea dictumst.</p>
@@ -32,8 +42,8 @@
     </header>
 
     <main>
-      <section class="section01">
-        <h4 class="small-title" >Insomnia tips</h4>
+      <section class="section01" id="section01">
+        <h4 class="small-title">Insomnia tips</h4>
         <h2 class="section-title" tabindex="1">Looking through a window</h2>
         <p>
           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
